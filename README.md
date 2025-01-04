@@ -11,11 +11,11 @@ mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 ros2 pkg create llm-turtlebot3 --build-type ament_python --dependencies rclpy std_msgs
 ```
-Copy [turtlebot_control.py](./turtlebot_control.py) in this repository to the package directory.
+Copy [`turtlebot_control.py`](./turtlebot_control.py) in this repository to the package directory.
 ```bash
 cp [path_of_this_repo]/turtlebot_control.py ~/ros2_ws/src/llm-turtlebot3/llm-turtlebot3/
 ```
-Edit setup.py in the package. Add the following line to the entry_points.
+Edit `setup.py` in the package. Add the following line to the entry_points.
 ```python
 # in ~/ros2_ws/src/llm-turtlebot3/llm-turtlebot3/setup.py
 entry_points={
@@ -30,7 +30,7 @@ cd ~/ros2_ws
 colcon build --packages-select llm-turtlebot3
 ```
 ## Create environment
-We recommend using conda to manage dependencies. Make sure to install [Conda](https://docs.anaconda.com/miniconda/) before proceeding. The code works well with Python 3.9 and the packages listed in [requirements.txt](./requirements.txt). It should be compatible with other versions of Python.
+We recommend using conda to manage dependencies. Make sure to install [Conda](https://docs.anaconda.com/miniconda/) before proceeding. The code works well with `python 3.9` and the packages listed in [`requirements.txt`](./requirements.txt). It should be compatible with `python >= 3.9` for mediapipe requires `python 3.9-3.12`. 
 ```bash
 conda create -n llm-turtlebot3 python=3.9
 conda activate llm-turtlebot3

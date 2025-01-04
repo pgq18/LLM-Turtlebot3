@@ -2,10 +2,6 @@ from spark_lite import spark_lite
 from iat_ws_python3 import iat
 
 import keyboard
-import requests
-import json
-
-import time
 import roslibpy
 # /* 默认端口9090
 # */
