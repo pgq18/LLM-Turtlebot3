@@ -41,7 +41,7 @@ pip install -r requirements.txt
 On Turtlebot3, run the following command to bring up basic packages to start TurtleBot3 applications.
 ```bash
 export TURTLEBOT3_MODEL=${TB3_MODEL}
-roslaunch turtlebot3_bringup turtlebot3_robot.launch
+ros2 launch turtlebot3_bringup turtlebot3_robot.launch
 ```
 Start TwistPublisher node on PC.
 ```bash
