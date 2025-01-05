@@ -45,6 +45,9 @@ ros2 launch turtlebot3_bringup robot.launch.py
 ```
 Start TwistPublisher node on PC.
 ```bash
+# terminal 0
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+# terminal 1
 cd ~/ros2_ws
 source install/setup.bash
 ros2 run llm-turtlebot3 controler
